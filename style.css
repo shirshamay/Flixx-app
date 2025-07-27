@@ -1,0 +1,181 @@
+:root {
+  --main-color: #020d18;
+  --special-color: rgb(245, 165, 245);
+  --second-color: white;
+}
+body {
+  font-family: "Poppins";
+  background-color: var(--main-color);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1rem;
+}
+.head {
+  display: flex;
+  gap: 1rem;
+  a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: large;
+    &:hover {
+        color:#0a4b8f;
+    }
+  }
+}
+.logo a {
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: 600;
+  color: var(--second-color);
+}
+/* now playing */
+.now-playing {
+  background: url("https://github.com/bradtraversy/flixx-app/blob/main/images/showcase-bg.jpg?raw=true")
+    no-repeat center center/cover;
+  padding: 60px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: var(--second-color);
+  h2 {
+    text-align: center;
+  }
+}
+/* search */
+.search {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.search-radio {
+  color: var(--second-color);
+  padding-bottom: 5px;
+}
+.search-flex {
+  display: flex;
+}
+#search-term {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 415px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: var(--second-color);
+  &::placeholder {
+    color: var(--second-color);
+    padding: 8px;
+  }
+}
+.search .container form input[type="text"]::placeholder {
+  color: #fff;
+}
+.search .container form input[type="text"]:focus {
+  outline: none;
+}
+.btn {
+  flex: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: block;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  cursor: pointer;
+  background: var(--special-color);
+  color: #000;
+  margin-left: 10px;
+  color: var(--main-color);
+  i {
+    font-size: large;
+  }
+}
+/* popular movies */
+.container-popular {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+
+  /* Card */
+  .card {
+    background: #04376b;
+    padding: 5px;
+    color: var(--second-color);
+  }
+  .card img {
+    width: 100%;
+  }
+  .card-body {
+    font-size: 20px;
+    padding-left: 8px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    background: #0a4b8f;
+  }
+  h2 {
+    color: var(--second-color);
+    text-align: center;
+  }
+}
+/* movie detail */
+.btn-detail {
+  border: 1px solid var(--special-color);
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.back {
+  height: 50px;
+  padding-top: 10px;
+}
+#movie-details {
+  color: white;
+  .card-img-top {
+    width: 380px;
+    height: 90%;
+    margin-right: 60px;
+    object-fit: cover;
+  }
+}
+.details-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 15px 30px;
+}
+/* details bottom */
+.details-bottom h2 {
+  text-align: center;
+}
+.details-bottom li {
+ list-style: none;
+ padding: 1rem;
+ border-bottom: 1px solid rgb(182, 180, 180);
+ opacity: 0.7;
+}
+.details-bottom span {
+  color: var(--special-color);
+}
+.list-group, h4 {
+  margin: 1rem;
+  padding-top: 0.5rem;
+}
+/* search.html */
+.pagination {
+  display: flex;
+  width: 257px;
+  margin-top: 1rem;
+}
