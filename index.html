@@ -11,12 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="libraries/swiper.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="spinner.css" />
-    <script src="swiper.js"></script>
+    <script src="libraries/swiper.js"></script>
     <script src="script.js" defer></script>
-    <title>Flixx</title>
+    <title>Flixx app</title>
   </head>
   <body>
     <header class="main-header">
@@ -25,7 +25,7 @@
         <nav>
           <ul class="head">
             <li>
-              <a class="nav-link" href="/">Movies</a>
+              <a class="nav-link" href="movies.html">Movies</a>
             </li>
               <a class="nav-link" href="shows.html">TV Shows</a>
             </li>
@@ -78,161 +78,24 @@
       </div>
     </section>
 
+<!-- upcoming soon -->
+<h2 class="header_coming">Upcoming soon</h2>
+<section class="upcoming-section">
+  <div class="swiper upcoming-swiper">
+    <div class="swiper-wrapper">
+      <!-- Movie cards will be inserted here by JavaScript -->
+    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev upcoming-nav-prev"></div>
+    <div class="swiper-button-next upcoming-nav-next"></div>
+  </div>
+</section>
+
     <!-- Popular Movies -->
     <section class="container-popular">
       <h2>Popular Movies</h2>
       <div id="popular-movies" class="grid">
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
         </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-            <a href="movie-details.html?id=1">
-              <img
-                src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-                class="card-img-top"
-                alt="Movie Title"
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">Movie Title</h5>
-              <p class="card-text">
-                <small class="text-muted">Release: XX/XX/XXXX</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <a href="movie-details.html?id=1">
-              <img
-                src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-                class="card-img-top"
-                alt="Movie Title"
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">Movie Title</h5>
-              <p class="card-text">
-                <small class="text-muted">Release: XX/XX/XXXX</small>
-              </p>
-            </div>
-          </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="https://github.com/bradtraversy/flixx-app/blob/main/images/no-image.jpg?raw=true"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Footer -->
